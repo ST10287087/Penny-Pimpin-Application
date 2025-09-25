@@ -5,9 +5,6 @@ Penny Pimpin' - Personal finance Budgeting android app
 
 ![image](https://github.com/user-attachments/assets/18f35887-c50a-4d64-92a9-2c88732d094e)
 
-# Demonstration Video
-https://youtu.be/xdSaSBrTj3c?si=krqEMZw82vwAZco3
-
 # Project Description
 Penny Pimpin' is a mobile budgeting application that helps users to track and categorise their expenses, and set monthly spending goals for every expense category. The app is designed for simplicity and ease of use by incoporating stand-out colours and text with an interactive user interface. it allows users to accurately track how and when they are spending their money by displaying expenditure in bar graphs and progress bars.
 
