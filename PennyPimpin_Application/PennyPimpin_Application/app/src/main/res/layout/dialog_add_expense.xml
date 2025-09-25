@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#b39ddb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/expense_background_purple_blue">
+
+        <EditText
+            android:id="@+id/editExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Expense Name"
+            android:background="@drawable/rounded_edittext"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/editExpenseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/editExpenseDate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:hint="Date (DD-MM-YYYY)"
+            android:focusable="false"
+            android:background="@drawable/rounded_edittext"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/editExpenseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:background="@drawable/rounded_edittext"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imageReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Receipt Image"
+            android:background="#EEEEEE" />
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Select Receipt" />
+
+    </LinearLayout>
+</ScrollView>

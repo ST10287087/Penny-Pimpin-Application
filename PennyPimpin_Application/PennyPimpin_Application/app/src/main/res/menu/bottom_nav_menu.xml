@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- /**
+        Attribution:
+        Video:
+        Nav bar fragments – YouTube.
+
+        Author/Channel: Android Mastermind
+        Title: "How to create custom bottom navigation bar in android studio || Kotlin || bottom navigation bar"
+        URL: https://youtu.be/bKLDhYKrMZo?si=fXKKNByLSoG2IK8l
+        Accessed on: 2025-04-26
+         */-->
+    <item
+        android:id="@+id/nav_budget"
+        android:icon="@drawable/money_svgrepo_com"
+        android:title="Budget Goals"/>
+    <item
+        android:id="@+id/nav_analytics"
+        android:icon="@drawable/chart_line"
+        android:title="Analytics"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_categories"
+        android:icon="@drawable/card_plus_outline"
+        android:title="Categories"/>
+    <item
+        android:id="@+id/nav_loan_management"
+        android:icon="@drawable/account_circle"
+        android:title="Loan Management"/>
+
+
+</menu>

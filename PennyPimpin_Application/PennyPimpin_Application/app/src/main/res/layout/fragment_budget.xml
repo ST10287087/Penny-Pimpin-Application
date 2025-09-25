@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".fragment.BudgetFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="16dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleCatBug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per-Category Budget Limit"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal" />
+
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editCategoryGoalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="9dp"
+                android:hint="Limit for selected category"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <Button
+                android:id="@+id/btnSaveCategoryGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Category Limit"
+                android:backgroundTint="#5753A4"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

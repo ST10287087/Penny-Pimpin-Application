@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.ExpenseListFragment">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textCategoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Category Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+    <!-- Date Filter Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:hint="Start Date"
+            android:focusable="false"
+            android:background="@drawable/rounded_edittext"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editEndDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:hint="End Date"
+            android:layout_marginStart="8dp"
+            android:focusable="false"
+            android:background="@drawable/rounded_edittext"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnFilterByDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#0072B8"/>
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No expenses yet. Add one!"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Total Expense for Category: R0.00"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:background="@drawable/background_amount"
+        android:inputType="none"/>
+    <!-- FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/plus_svgrepo_com" />
+</LinearLayout>
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ExpenseListFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textCategoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Category Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus_svgrepo_com"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+
+</FrameLayout>
+-->
